@@ -28,12 +28,12 @@ export default async function ChapterPage({
           <p className="text-[#EBE8E0] mb-6">
             This chapter is only available after purchase.
           </p>
-          <a
+          <Link
             href="https://your-purchase-link.com"
             className="inline-block bg-[#D01110] hover:bg-[#ab0000] text-white font-semibold py-3 px-8 rounded-lg text-base sm:text-lg transition"
           >
             Purchase to Unlock All Chapters
-          </a>
+          </Link>
         </div>
       </main>
     );

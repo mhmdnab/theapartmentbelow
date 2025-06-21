@@ -1,5 +1,5 @@
 // app/about/page.tsx
-import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -54,60 +54,60 @@ export default function AboutPage() {
           </h2>
           <ul className="list-decimal list-inside text-[#EBE8E0] text-base space-y-1">
             <li>
-              <a
+              <Link
                 href="/chapters/01-intro"
                 className="hover:text-red-500 transition"
               >
                 Chapter 1: A Noisy Night
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/chapters/02-strange-signals"
                 className="hover:text-red-500 transition"
               >
                 Chapter 2: Strange Signals
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/chapters/03-beneath-the-floor"
                 className="hover:text-red-500 transition"
               >
                 Chapter 3: Beneath the Floor
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/chapters/04-the-message"
                 className="hover:text-red-500 transition"
               >
                 Chapter 4: The Message
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/chapters/05-echoes"
                 className="hover:text-red-500 transition"
               >
                 Chapter 5: Echoes
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/chapters/06-the-trap"
                 className="hover:text-red-500 transition"
               >
                 Chapter 6: The Trap
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/chapters/07-exit-strategy"
                 className="hover:text-red-500 transition"
               >
                 Chapter 7: Exit Strategy
-              </a>
+              </Link>
             </li>
             {/* Add more as needed */}
           </ul>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // components/AboutBook.tsx
 export default function AboutBook() {
   return (
@@ -18,9 +20,9 @@ export default function AboutBook() {
           Twists lurk behind every wall. Loyalties are tested. And no one is who
           they seem. Will Harper uncover the truth before it’s too late?
         </p>
-        <a href="/about" className="hover:underline text-[#D01110]">
+        <Link href="/about" className="hover:underline text-[#D01110]">
           More Details
-        </a>
+        </Link>
       </div>
     </section>
   );
