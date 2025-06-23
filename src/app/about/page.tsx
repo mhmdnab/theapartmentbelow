@@ -1,15 +1,15 @@
 // app/about/page.tsx
+import Image from "next/image";
 import Link from "next/link";
+import logo from "../../../public/images/ChatGPT Image Jun 24, 2025, 12_47_10 AM.png";
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#0A0A00] flex items-center justify-center py-16 px-4">
       <div className="max-w-3xl w-full mx-auto b bg-[#212121] rounded-2xl shadow-lg p-8">
         {/* Book Cover & Title */}
-        <div className="flex flex-col items-center mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#A8BBB0] mb-2 text-center">
-            The Apartment Below
-          </h1>
+        <div className="flex md:flex-row flex-col items-center justify-evenly mb-8">
+          <Image alt="logo" src={logo} width={250} height={250} />
           <span className="text-lg text-red-700 font-semibold tracking-wide">
             A Psychological Thriller
           </span>

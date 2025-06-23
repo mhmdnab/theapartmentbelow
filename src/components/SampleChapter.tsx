@@ -12,10 +12,12 @@ export default function SampleChapter() {
           Chapter 1: A Noisy Night
         </h3>
         <p className="text-gray-200 text-base sm:text-lg mb-8 text-center italic">
-          Cal’s sleep was shattered by a crash from the apartment below. She sat
-          up, pulse racing. The sound wasn’t just noise—it was a warning. In the
-          silent minutes that followed, Harper realized this was no ordinary
-          night.
+          Cal Rainer’s flashlight beam danced across the dim corridor as the hum
+          of the overhead lights pressed against his eardrums. At exactly 3:04
+          a.m., a single elevator button flickered on—apartment 703—though no
+          one had called it. With each cautious step, the faint scrape of
+          something heavy being dragged echoed through the stillness, as if the
+          building itself was testing his resolve...
         </p>
         <div className="text-center">
           <Link href="/chapters/01-intro">

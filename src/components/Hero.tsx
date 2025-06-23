@@ -22,8 +22,8 @@ export default function Hero() {
           Unravel the Conspiracy
         </h2>
         <p className="text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8 break-words">
-          Follow former FBI agent Harper Lane on a pulse-pounding journey
-          through secrets, betrayal, and redemption across a riveting multi-part
+          Follow former FBI agent Cal Rainer on a pulse-pounding journey through
+          secrets, betrayal, and redemption across a riveting multi-part
           thriller.
         </p>
         <Link href="/chapters/01-intro">

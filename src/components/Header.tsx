@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import logo from "../../public/images/ChatGPT Image Jun 24, 2025, 12_47_10 AM.png";
 
 export default function Header() {
   return (
@@ -6,9 +8,7 @@ export default function Header() {
       <div className="container mx-auto p-4 flex flex-col items-center md:flex-row md:justify-between">
         {/* Logo on top (mobile), left (md+) */}
         <Link href="/">
-          <h1 className="text-2xl font-bold mb-4 md:mb-0 text-[#A8BBB0]">
-            The Apartment Below
-          </h1>
+          <Image alt="logo" src={logo} width={120} height={120} />
         </Link>
 
         {/* Nav links below logo on mobile, to the right on md+ */}
