@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../public/images/ChatGPT Image Jun 24, 2025, 12_47_10 AM.png";
+import { chapters } from "@/data/chapters";
 
 export default function AboutPage() {
   return (
@@ -52,64 +53,17 @@ export default function AboutPage() {
           <h2 className="text-xl font-semibold text-[#A8BBB0] mb-2">
             Table of Contents
           </h2>
-          <ul className="list-decimal list-inside text-[#EBE8E0] text-base space-y-1">
-            <li>
-              <Link
-                href="/chapters/01-intro"
-                className="hover:text-red-500 transition"
-              >
-                Chapter 1: A Noisy Night
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/chapters/02-strange-signals"
-                className="hover:text-red-500 transition"
-              >
-                Chapter 2: Strange Signals
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/chapters/03-beneath-the-floor"
-                className="hover:text-red-500 transition"
-              >
-                Chapter 3: Beneath the Floor
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/chapters/04-the-message"
-                className="hover:text-red-500 transition"
-              >
-                Chapter 4: The Message
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/chapters/05-echoes"
-                className="hover:text-red-500 transition"
-              >
-                Chapter 5: Echoes
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/chapters/06-the-trap"
-                className="hover:text-red-500 transition"
-              >
-                Chapter 6: The Trap
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/chapters/07-exit-strategy"
-                className="hover:text-red-500 transition"
-              >
-                Chapter 7: Exit Strategy
-              </Link>
-            </li>
-            {/* Add more as needed */}
+          <ul className="list-decimal list-inside text-base space-y-1">
+            {chapters.map((ch) => (
+              <li key={ch.slug} className="text-[#A8BBB0] hover:text-red-500">
+                <Link
+                  href={`/chapters/${ch.slug}`}
+                  className="hover:text-red-500 transition text-[#A8BBB0]"
+                >
+                  {ch.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </section>
         {/* Author Section */}
