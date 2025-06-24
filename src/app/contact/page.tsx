@@ -1,4 +1,3 @@
-// app/contact/page.tsx
 "use client";
 import { useState } from "react";
 
@@ -9,16 +8,28 @@ export default function ContactPage() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setStatus("idle");
     try {
-      // Integrate with backend/email API here
-      setStatus("success");
-      setForm({ name: "", email: "", message: "" });
-    } catch {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        setStatus("success");
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      console.error(err);
       setStatus("error");
     }
   };
@@ -80,6 +91,7 @@ export default function ContactPage() {
             Send Message
           </button>
         </form>
+
         {status === "success" && (
           <p className="text-green-600 mt-4 text-center">
             Message sent successfully!
