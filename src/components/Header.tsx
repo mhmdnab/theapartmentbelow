@@ -4,7 +4,7 @@ import logo from "../../public/images/ChatGPT Image Jun 24, 2025, 12_47_10 AM.pn
 
 export default function Header() {
   return (
-    <header className="bg-[#212121] shadow">
+    <header className="bg-[#212121] shadow sticky z-99 top-0">
       <div className="container mx-auto p-4 flex flex-col items-center md:flex-row md:justify-between">
         {/* Logo on top (mobile), left (md+) */}
         <Link href="/">

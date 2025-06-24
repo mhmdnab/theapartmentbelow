@@ -23,13 +23,13 @@ export default function AboutPage() {
           </h2>
           <p className="text-[#EBE8E0] text-base mb-3">
             <span className="font-semibold">The Apartment Below</span> follows
-            Harper Lane, a former FBI agent haunted by her past and desperate
-            for a fresh start. But the walls of her new apartment hide more than
-            memories—a series of eerie sounds and unexplained events draw Harper
+            Cal Rainer, a former FBI agent haunted by her past and desperate for
+            a fresh start. But the walls of her new apartment hide more than
+            memories—a series of eerie sounds and unexplained events draw Cal
             into a dangerous web of secrets, lies, and paranoia.
           </p>
           <p className="text-[#EBE8E0] text-base mb-3">
-            As Harper digs deeper, she finds herself questioning not just her
+            As Cal digs deeper, she finds herself questioning not just her
             neighbors, but her own sanity. With each twist, the line between
             friend and foe blurs, and time is running out to uncover the truth
             about the apartment below.
